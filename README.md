@@ -13,7 +13,12 @@
 * **Business Impact:** By shifting focus to high-LTV customers, the business can improve customer retention, increase the Average Order Value (AOV), and reduce wasted ad spend.
 
 ---
-
+## Repository Structure
+This repository is organized into a modular directory format:
+* **`/sql/`**: Contains `01_extraction_query.sql`, the BigQuery Standard SQL script used to join the fact/dimension tables, filter out dirty data, and extract the Top 20 VIP customers.
+* **`/scripts/`**: Contains `02_automation_pipeline.py`, the Google Colab Python script (Pandas & BigQuery API) that automates the SQL execution and exports the clean dataset.
+* **`/reports/`**: Contains `Top_20_VIP_Customers.xlsx`, the final deliverable. It includes the raw Python-generated data on the first tab, and the interactive Pivot Table / Pivot Chart executive dashboard on the second tab.
+---
 ## Dataset Profile & Architecture
 * **Source:** Google BigQuery Public Datasets (`bigquery-public-data.thelook_ecommerce`)
 * **Structure:** A relational, synthetic enterprise database mimicking a large-scale global e-commerce platform. The architecture consists of multi-million-row transactional records tied to dimensional product and user catalogs.
