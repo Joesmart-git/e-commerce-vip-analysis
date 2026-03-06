@@ -1,4 +1,5 @@
 # White Glove Retention - E-commerce VIP Analysis
+📖 **[Read the Full Interactive Case Study on My Notion Portfolio](https://whispering-crater-183.notion.site/Driving-Revenue-through-VIP-Customer-Targeting-31be54702f0b805c9c1efa5ffe13d09a?source=copy_link)**
 
 **Role:** Data Analyst  
 **Tools Used:** Google BigQuery / Standard (SQL), Python (Pandas), MS Excel (Pivot Tables)  
@@ -128,17 +129,20 @@ df_vips = client.query(sql_query).to_dataframe()
 #load clean data to excel format;
 df_vips.to_excel("Top_20_VIP_Customers.xlsx", index=False)
 ```
+<div align="center">
 <img width="926" height="652" alt="image" src="https://github.com/user-attachments/assets/96b04cc0-a44b-462b-8b98-689776c2fe62" />
-
+  </div>
 
 ### Phase 4: Executive Dashboard (Data Visualization)
 * **The Goal:** Translate the raw VIP dataset into a dynamic visual format for non-technical stakeholders (VP of Sales).
 * **Execution:** Ingested the Python-generated Excel file to construct a localized Pivot Table aggregating `lifetime_revenue` by `country`. Developed an interactive Clustered Column Pivot Chart, formatted with currency standardizations and data labels, to instantly visualize the most profitable international regions.
-
+<div align="center">
 <img width="1182" height="535" alt="image" src="https://github.com/user-attachments/assets/7c95e098-5948-4430-9128-832e00104b76" />
-
+  </div>
 
 ---
 
 ## The Business Impact
 By successfully engineering an end-to-end data pipeline—from cloud SQL extraction to Python automation and Excel visualization—this model empowers executive leadership to bypass raw transactional noise. It allows the marketing team to immediately isolate high-value cohorts, visualize regional profitability, and confidently redirect ad spend toward retaining the specific "Whales" driving enterprise revenue.
+
+📖 **[Read the Full Interactive Case Study on My Notion Portfolio](https://whispering-crater-183.notion.site/Driving-Revenue-through-VIP-Customer-Targeting-31be54702f0b805c9c1efa5ffe13d09a?source=copy_link)**
